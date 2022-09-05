@@ -14,7 +14,7 @@ class BestBooks extends React.Component {
   /* TODO: Make a GET request to your API to fetch all the books from the database  */
   componentDidMount = () => {
     axios
-      .get(`http://localhost:3001/Books`)
+      .get(`https://can-of-books123.herokuapp.com/Books`)
       .then((result) => {
         console.log(result.data);
         this.setState({
@@ -33,7 +33,7 @@ class BestBooks extends React.Component {
       Status: event.target.disabledSelect.value,
     };
     axios
-      .post(`http://localhost:3001/addBook`, infoObj)
+      .post(`https://can-of-books123.herokuapp.com/addBook`, infoObj)
       .then((result) => {
         console.log(result.data);
         this.setState({
@@ -47,7 +47,7 @@ class BestBooks extends React.Component {
 
   deleteBook = (id) => {
     axios
-      .delete(`http://localhost:3001/deleteBook/${id}`) // or pass it as query http://localhost:3010/deleteCat?id=${id}
+      .delete(`https://can-of-books123.herokuapp.com/deleteBook/${id}`) // or pass it as query http://localhost:3010/deleteCat?id=${id}
       .then((result) => {
         this.setState({
           books: result.data,

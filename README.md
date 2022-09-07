@@ -50,6 +50,17 @@ Start time: 2pm
 Finish time: 6pm
 
 Actual time needed to complete: 4 hours
+7/9/2022 the user cant see the content unless he signed in.
+
+Name of feature: mongo db
+
+Estimate of time needed to complete: 3 hours
+
+Start time: 2pm
+
+Finish time: 6pm
+
+Actual time needed to complete: 4 hours
 
 
 
@@ -57,4 +68,4 @@ Actual time needed to complete: 4 hours
 
 bootstrap
 https://mongoosejs.com/docs/
-
+Auth0
